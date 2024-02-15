@@ -6,7 +6,8 @@ This is an example model of a [Block Diagram View](https://en.wikipedia.org/wiki
 ![alt text](img/image.png)
 
 
-[OML-Vision](https://github.com/opencaesar/oml-vision) understands the parent-child relationship using the IRI information obtained from the SPARQL query when the parent block contains child blocks. In this case, the IRI of the child should be obtained with the ?iri key and the IRI of the parent should be specified with ?parentIri or a key ending with 'Iri'.
+[OML-Vision](https://github.com/opencaesar/oml-vision) understands the parent-child relationship using the IRI information obtained from the SPARQL query when the parent block contains child blocks. 
+In this case, the IRI of the child should be obtained with the ?iri key and the IRI of the parent should be specified with ?parentIri or a key [ending with 'Iri'](https://github.com/opencaesar/oml-vision/blob/master/view/src/components/Diagram/diagramUtils.ts#L64C1-L65C1).
 
 
 diagramLayouts.json
