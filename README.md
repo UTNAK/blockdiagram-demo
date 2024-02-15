@@ -61,8 +61,9 @@ diagramLayouts.json
 ![alt text](img/image-1.png)
 
 
-subsystem.sparql for parents.
+## subsystem.sparql for parents.
 
+[?iri]() is a key for parents.
 
 ```sparql
 PREFIX base:        <http://imce.jpl.nasa.gov/foundation/base#>
@@ -98,7 +99,10 @@ ORDER BY ?c1_id
 ```
 
 
-assembly.sparql for children.
+## assembly.sparql for children.
+
+[?parentIri]() is a key for parents.
+[?iri]() is a key for children.
 
 ```sparql
 PREFIX base:        <http://imce.jpl.nasa.gov/foundation/base#>
