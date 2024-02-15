@@ -1,0 +1,33 @@
+[
+    { "title": "Home", "path": "/", "treeIcon": "home" },
+    {
+      "title": "OSR",
+      "treeIcon": "server",
+      "iconUrl": "https://nasa-jpl.github.io/stellar/icons/satellite.svg",
+      "children": [
+        { 
+          "title": "Decomposition",
+          "treeIcon": "window",
+          "path": "decompositions",
+          "isDiagram": true
+        },
+        { 
+          "title": "IBD",
+          "treeIcon": "window",
+          "path": "ibd",
+          "isDiagram": true
+        },
+       {
+          "title": "Components",
+          "treeIcon": "list-tree",
+          "path": "components",
+          "isTree": true
+        },
+        {
+          "title": "Component Table",
+          "treeIcon": "graph-scatter",
+          "path": "component-table"
+        }
+      ]
+    }
+  ]

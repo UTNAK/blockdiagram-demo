@@ -1,0 +1,3 @@
+vocabulary bundle <http://opencaesar.io/open-source-rover/vocabulary/bundle#> as ^bundle {
+	includes <http://opencaesar.io/open-source-rover/vocabulary/structure#>
+}

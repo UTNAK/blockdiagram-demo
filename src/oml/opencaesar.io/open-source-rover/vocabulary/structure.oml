@@ -1,0 +1,39 @@
+vocabulary <http://opencaesar.io/open-source-rover/vocabulary/structure#> as ^structure {
+
+	extends <http://imce.jpl.nasa.gov/foundation/mission#> as mission
+
+	extends <http://imce.jpl.nasa.gov/foundation/base#> as base
+
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+//	concept System < mass:MechanicalComponent
+	concept System < mission:Component
+
+	concept Subsystem < mission:Component
+//	concept Subsystem < mass:MechanicalComponent
+
+	relation hasSubsystem [
+		from System
+		to Subsystem
+	] < base:contains
+
+	concept Assembly < mission:Component
+	
+	relation hasAssembly [
+		from Subsystem
+		to Assembly
+	] < base:contains
+
+	concept Part < mission:Component
+	
+	relation hasPart [
+		from Assembly
+		to Part
+	] < base:contains
+
+	scalar property hasPartsNumber [
+		domain Part
+		range xsd:string
+	]
+
+}
